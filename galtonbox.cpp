@@ -3,7 +3,6 @@
 #include <cmath>     // For mathematical functions (sqrt, exp, pow)
 #include <iomanip>   // For output formatting (setw, setprecision, fixed)
 #include <random>    // For random number generation (mt19937, uniform_real_distribution)
-#include <numeric>   // Not directly used but good for general includes
 #include <algorithm> // For std::max
 #include <fstream>   // For file I/O operations (ofstream)
 #include <string>    // For std::string
@@ -345,15 +344,11 @@ int main() {
 
         std::string title2 = "Experimental Freq vs Binomial PMF (n=" + std::to_string(n) + ", N=" + std::to_string(N) + ")";
         generateExperimentalVsBinomialPlot(plotDataFilename, experimentalBinomialPng, title2);
-        
-        // Optional: Clean up the temporary data file after plotting
-        // std::remove(plotDataFilename.c_str());
-        // std::cout << "Cleaned up data file: " << plotDataFilename << "\n";
     }
     
     std::cout << "\nSimulation complete. Press Enter to exit.";
-    std::cin.ignore(); // Consume any leftover newline character from previous input
-    std::cin.get();    // Wait for user to press Enter
+    std::cin.ignore();
+    std::cin.get(); 
 
-    return 0; // Indicate successful execution
+    return 0;
 }
