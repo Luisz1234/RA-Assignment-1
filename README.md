@@ -6,7 +6,7 @@ This repository contains the C++ source code for Assignment 1: Galton Box Simula
 
 The `galtonbox.cpp` program performs the following:
 1.  **Simulation:** Simulates `N` balls falling through an `n`-level Galton board.
-2.  **Distribution Calculation:** Computes empirical frequencies, the theoretical binomial PMF $P(X=k) = \binom n k (0.5)^n$, and its normal approximation $ \mathcal{N}(n/2, n/4) $.
+2.  **Distribution Calculation:** Computes empirical frequencies, the theoretical binomial PMF $P(X=k) = \binom n k (0.5)^n$, and its normal approximation $\mathcal{N}(n/2, n/4)$.
 3.  **Error Analysis:** Calculates Mean Quadratic Error (MQE) for:
     *   Binomial PMF vs. Normal PDF
     *   Experimental Frequencies vs. Binomial PMF
